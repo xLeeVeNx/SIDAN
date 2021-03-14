@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <title>SIDAN</title>
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner header__inner--guarantee">
+        <nav class="menu">
+          <span class="menu__burger"></span>
+
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="index.html">Главная</a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="contact.html">Контакты</a>
+            </li>
+
+            <li class="menu__item menu__item--active">
+              <a class="menu__link" href="guarantee.html">Гарантии</a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="#">Личный кабинет</a>
+            </li>
+          </ul>
+
+          <a class="logo" href="index.html"><span>Si</span>dan</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="major">
+      <div class="container">
+        <div class="major__inner major__inner--guarantee">
+          <div class="major__box">
+            <p class="major__item">
+              Уже более более <span>10 тыс. человек </span>обратились
+              к нам за разработкой уникального софта, который бы удовлетворял каждому из их желаний. Мы гордимся своим
+              продуктом
+              и дорожим репутацией среди клиентов.
+            </p>
+
+            <p class="major__item">
+              Мы гарантируем вам полный возрат средств в случае, если ПО будет работать некорректно.
+            </p>
+          </div>
+
+          <button class="major__button" type="button" data-fancybox data-src="#popup"
+            data-options='{"touch" : false}'>Оставить заявку</button>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <div class="popup" id="popup" style="display: none;">
+      <h3 class="popup__title">Собери свой софт</h3>
+      <p class="popup__subtitle">
+        Реализуем твою задумку по самому
+        <span>вкусному</span> прайсу
+      </p>
+
+      <button class="popup__close" data-fancybox-close></button>
+
+      <form class="popup__form" action="#">
+        <input class="popup__input" type="text" placeholder="Имя">
+        <input class="popup__input" type="text" placeholder="Telegram">
+        <input class="popup__input" type="text" placeholder="Почта">
+
+        <div class="popup__box-select">
+          <select class="popup__select">
+            <option selected>Выбрать игру</option>
+            <option>CS:GO</option>
+            <option>Dota2</option>
+          </select>
+        </div>
+
+        <textarea class="popup__textarea"
+          placeholder="В данном поле опишите те функции, которые хотели бы увидеть в софте. Мы обработаем вашу заявку и реализуем абсолютно все ваши желания..."></textarea>
+
+        <div class="popup__box-button">
+          <button class="popup__button" type="submit" data-fancybox data-src="#popup-send">Отправить</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="popup-send" id="popup-send" style="display: none;">
+      <div class="popup-send__inner">
+        <img class="popup-send__image" src="images/icons/check.svg" alt="Иконка ОК">
+
+        <div class="popup-send__title">Ваша заявка успешно <span>отправлена</span></div>
+        <div class="popup-send__subtitle">Мы скоро с вами свяжемся</div>
+
+        <button class="popup__close" data-fancybox-close></button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a class="footer__link" href="#">Соглашение</a>
+        </li>
+
+        <li class="footer__item">
+          <a class="footer__link" href="#">FAQ</a>
+        </li>
+
+        <li class="footer__item">
+          <a class="footer__link" href="#">Сотрудничество</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
